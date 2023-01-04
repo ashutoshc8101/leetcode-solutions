@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-
         int i = 0;
         int j = matrix.size() - 1;
 
@@ -14,13 +13,11 @@ public:
 
             if (mid < matrix.size() - 1 && matrix[mid][0] < target && matrix[mid + 1][0] > target) {
                 i = mid;
-                cout << "Found in row " << i << endl;
                 break;
             }
 
             if (mid == matrix.size() - 1 && matrix[mid][0] < target) {
                 i = mid;
-                cout << "Found in row " << i << endl;
                 break;
             }
 
